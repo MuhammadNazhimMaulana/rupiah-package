@@ -1,0 +1,18 @@
+{
+    "name": "bonevian/rupiah",
+    "description": "Simple Package for Transforming Number to Rupiah",
+    "require": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bonevian\\Rupiah\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MuhammadNazhimMaulana",
+            "email": "nazhimmaulanamuhammad@gmail.com"
+        }
+    ]
+}
