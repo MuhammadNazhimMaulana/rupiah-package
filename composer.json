@@ -4,6 +4,7 @@
     "require": {
         "phpunit/phpunit": "^9.6"
     },
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Bonevian\\Rupiah\\": "src/"
