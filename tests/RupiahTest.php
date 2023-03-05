@@ -21,4 +21,16 @@ final class TransactionTest extends TestCase
         $this->assertNotNull($request->toRupiah(100000));
     }
 
+    /**
+     * @group testToNominal
+     */
+    public function testToNominal()
+    {
+        $request = new Rupiah();
+
+        // Return the value to returns.log
+        error_log(strval($request->toNominal(100000)) . "\n", 3, "returns.log");
+        $this->assertNotNull($request->toNominal(100000));
+    }
+
 }
