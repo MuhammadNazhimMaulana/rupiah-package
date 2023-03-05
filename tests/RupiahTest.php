@@ -32,5 +32,17 @@ final class TransactionTest extends TestCase
         error_log(strval($request->toNominal(100000)) . "\n", 3, "returns.log");
         $this->assertNotNull($request->toNominal(100000));
     }
+    
+    /**
+     * @group testToInternational
+     */
+    public function testToInternational()
+    {
+        $request = new Rupiah();
+
+        // Return the value to returns.log
+        error_log(strval($request->toInternational(100000)) . "\n", 3, "returns.log");
+        $this->assertNotNull($request->toInternational(100000));
+    }
 
 }

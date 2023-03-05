@@ -23,4 +23,13 @@ class Rupiah {
 
         return $response;
     }
+
+    // Rupiah International Scale
+    public function toInternational(int $number){
+        $request = new RupiahRepository();
+
+        $response = $request->toInternational($number);
+
+        return $response;
+    }
 }
